@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(180, 180, 180);
  
 }
 
@@ -24,18 +24,19 @@ h1, h3, p{
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: bisque;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: orange;
-    width:330px;
-    border-width: 10px;
+    background-color: rgb(206, 190, 161);
+    width:375px;
+    border-width: 3px;
     border-style: solid;
     border-radius: 5px;
-    border-color: red;
+    border-color: rgb(60, 60,60);
 
     
 }
