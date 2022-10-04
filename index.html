@@ -35,6 +35,18 @@
         <p>My second chart compares goals scored home and away by all Premier League teams.</p>
         <div class="chart" id="Chart2"> </div>
     </div> 
+
+    <div class="myWeek2">
+        <h1>Week 2</h1>
+        
+        <h3>IMF credit outstanding</h3>
+        <p>The first chart shows the nominal value of credit outstanding for all IMF members</p>
+        <div class="chart" id="Chart3"></div>
+
+        <h3>In real terms</h3>
+        <p>To understand the ability to pay off debts, we must compare debt to income. In this chart we normalise the credit outstanding by dividing through by the value of world GDP each year. (GDP values given in 2015 USD). The results show that although IMF credit payments have increased over the given period, the ability to pay off this debt has remained similar.</p>
+        <div class="chart" id="Chart4"> </div>
+    </div> 
 </body>
 
 
@@ -44,10 +56,14 @@
     var myChart2 = "chart2_ukProductivity.json";
     var myChart3 = "chartFootball1.json";
     var myChart4 = "chartFootball2.json";
+    var myChart5 = "IMF_creditoutstanding.json";
+    var myChart6 = "IMF_realcreditoutstanding.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart4);
     vegaEmbed('#Chart2', myChart3);
+    vegaEmbed('#Chart3', myChart5);
+    vegaEmbed('#Chart4', myChart6);
 </script>
 
 </html>
