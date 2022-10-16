@@ -35,6 +35,13 @@ h1, h3, p{
     border-radius: 10px;
 }
 
+.myWeek3{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+}
+
 
 
 /* Set the apperance of the class, chart */
