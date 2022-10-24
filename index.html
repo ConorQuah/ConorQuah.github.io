@@ -54,6 +54,10 @@
         <h3>Carbon Emissions since 1800</h3>
         <p>The chart shows the carbon emissions in billions of metric tonnes since 1800</p>
         <div class="chart" id="Chart5"></div>
+
+        <h3>Improved Chart</h3>
+        <p>Here i have changed the visual encoding to show the data in a line chart rather than a bar chart. A line chart is more appropriate here as it emphasises the change in carbon emissions over time, rather than unrelated unique data points.</p>
+        <div class="chart" id="Chart6"></div>
     </div> 
 
  
@@ -68,7 +72,8 @@
     var myChart4 = "chartFootball2.json";
     var myChart5 = "IMF_creditoutstanding.json";
     var myChart6 = "IMF_realcreditoutstanding.json";
-    var myChart7 = "carbon_emissions.json";
+    var myChart7 = "carbon_emissions_bar.json";
+    var myChart8 = "carbon_emissions.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart4);
@@ -76,6 +81,7 @@
     vegaEmbed('#Chart3', myChart5);
     vegaEmbed('#Chart4', myChart6);
     vegaEmbed('#Chart5', myChart7);
+    vegaEmbed('#Chart6', myChart8);
 </script>
 
 </html>
