@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,4 +16,38 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<head>
+    <title>Project</title>
+    <h1>What Makes a Country Happy?</h1> 
+    <p>by Conor Quah</p>
 </head>
+
+<body>
+
+    <h2>Exploring happiness and GDP around the world</h2>
+    <container class="a_container">
+    <p>Happiness on a scale of 1-10 around the World</p>
+    <div class="chart" id="Chart1">
+    <script>
+        var myChart1 = "hapiness_map.json";
+        vegaEmbed('#Chart1', myChart1);
+        </script>
+        </div>
+        </container> 
+        <container class="a_container">
+        <p>GDP per capita around the World</p>
+        <div class="chart" id="Chart2">
+        <script>
+        var myChart2 = "gdp_per_capita_around_the_world.json";
+        vegaEmbed('#Chart2', myChart2);
+        </script>  
+        </div> 
+        </container> 
+
+
+</body>
+
+
+
+</html>
