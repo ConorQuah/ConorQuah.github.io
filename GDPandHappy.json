@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/finland_data_with_event_again_again_again.csv"
+  },
+  "layer": [
+    {
+      "mark": {"opacity": 0.5, "type": "line", "color": "#e6224b"},
+      "encoding": {
+        "x": {
+  
+          "field": "Year",
+          "type": "temporal"
+        },
+        "y": {
+         
+          "field": "Happiness Index",
+          "title":"Happiness Index", 
+          "type": "quantitative",
+          "scale": {"domain": [6,9]},
+          "axis": {
+            "orient": "left",
+            "titleColor":"#e6224b"
+          }
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color":"black"},
+      "encoding": {
+        "x": {
+          "field":"Year",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "GDP (billion 2015USD)",
+          "scale": {"domain": [180,270]},
+          "type": "quantitative",
+          
+          "axis": {
+            "orient": "right"
+          }
+        }
+      }
+    }
+  ],
+   "resolve": {"scale": {"y": "independent"}}
+}

@@ -23,10 +23,15 @@
 
 
 <body>
+    </div>
+        <div class="links">
+         <a href="Project.html" class="link" id="link1">Project</a>
+    </div>
+
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
         <h1>Data Science for Economists.</h1>
-        
+   
         <h3>Home Goals</h3>
         <p>The first chart shows goals scored at home for 6 teams.</p>
         <div class="chart" id="Chart1"></div>
@@ -60,10 +65,90 @@
         <div class="chart" id="Chart6"></div>
     </div> 
 
+    <div class="myWeek4">
+        <h1>Week 4</h1>
+        
+        <h3>Golfers and Their Time Spent at Number 1</h3>
+        <p>This chart shows a selection of the best golfers over time and their time spent at the top of golf rankings. I chose to scrape from this website as the there were a few tables on the web page, allowing me to use the lens() function and to pick the appropriate table. However the data was fairly easy to analyse and use as there were no cookie blockers to the website and the column headers and data were in a usable form already. the link the the code i used to access the data can be found 
+            <a href="https://colab.research.google.com/drive/1Sy3PFPZEM5LWxyK_7pplOG3HBGFjHU9d#scrollTo=3ZKJN1xQvqjQ" id="link1">here. 
+            </a> </p>
+        <div class="chart" id="Chart7"></div>
+
+        
+    </div> 
+
+    <div class="myWeek5">
+        <h1>Week 5</h1>
+        
+        <h3>A Range of information on Unemployment in the UK</h3>
+        <p>This dashboard uses an API from the ONS which allowed me to access lots of different time series concerning unemployment in the UK. I used a loop in google colab to quickly access all the data via the API. The link to my google colab code can be found 
+            <a href="https://colab.research.google.com/drive/1OZj2Rys-og5GujEhClEm5Hb9MF18kXD9" id="link2">here. 
+            </a> </p>
+        <div class="chartw5" id="Chart8"></div>
+        <div class="chartw5" id="Chart9"></div>
+        <div class="chartw5" id="Chart10"></div>
+        <div class="chartw5" id="Chart11"></div>
+        <div class="chartw5" id="Chart12"></div>
+        <div class="chartw5" id="Chart13"></div>
+        <div class="chartw5" id="Chart14"></div>
+        <div class="chartw5" id="Chart15"></div>
+        <div class="chartw5" id="Chart16"></div>
+
+        
+    </div> 
+
+    <div class="myWeek7">
+        <h1>Week 7</h1>
+        
+        <h3>Using Maps to convey information</h3>
+        <p>This week, we created two maps. the first is a base map of our chosen country. The second is a chloropleth, overlaying English population data onto the base map. Note that the missing districts in the second map are not shown as the dataset does not contain population data on these areas.</p>
+        <div class="chartw7" id="Chart17"></div>
+        <div class="chartw7" id="Chart18"></div>
+        
+
+        
+    </div> 
+
+    <div class="myWeek8">
+        <h1>Week 8</h1>
+        
+        <h3>Festival of Economics</h3>
+        <p>In the 'Big Tech Under Control' talk it was mentioned that we shouldnt allow big firms to become so large, in order to protect consumers.</p>
+        <div class="chartw8" id="Chart21"></div>
+        <div class="chartw8" id="Chart22"></div>
+        <p>As market share increases, markups and profits increase. However, with increased profits, there is increase in R&D, allowing for innovation of better product for consumers.</p>
+      
+           
+    </div> 
+
+    <div class="myWeek9">
+        <h1>Week 9</h1>
+        
+        <h3>Advanced Charts</h3>
+        <p>The first chart is a scatter plot with bubble size used to represent population size. The second chart is a layered chart allowing us to see the correlated movement in GDP per capita and happiness in Finland (measured using the happiness index.) I NEED TO PUT AN EVENT TIME STAMP ON THE SECOND CHART OR SOMETHING.</p>
+        <div class="chartw8" id="Chart19"></div>
+        <div class="chartw8" id="Chart20"></div>
+        
+    </div> 
+
+    
+    <div class="myWeek4">
+        <h1>Week 10</h1>
+        
+        <h3>Machines learning</h3>
+        <p>The Chart below uses data on democratic quality and average happiness of a country to test for a correlation. The output of the regression along with visual evidence from the chart suggests that there is a weak, positive correlation between the two variables. the code used to regress the data can be found
+            <a href="https://colab.research.google.com/drive/1XWgrZJishIuFUna0wiN5CGRqrguQZN7O#scrollTo=ZsmEepP24gYp" id="link3">here. 
+            </a>
+        </p>
+        <div class="chartw8" id="Chart23"></div>
+    
+    </div> 
+
+
  
 </body>
 
-
+=
 <script>
     //Define charts:
     var myChart1 = "chart1_covidUKRegions.json";
@@ -74,6 +159,23 @@
     var myChart6 = "IMF_realcreditoutstanding.json";
     var myChart7 = "carbon_emissions_bar.json";
     var myChart8 = "carbon_emissions.json";
+    var myChart9 = "weeks_at_no1.json";
+    var myChart10 = "U_16+.json";
+    var myChart11 = "U_female_16+.json";
+    var myChart12 = "U_male_16+.json";
+    var myChart13 = "U_16-17.json";
+    var myChart14 = "U_18-24.json";
+    var myChart15 = "U_25-34.json";
+    var myChart16 = "U_35-49.json";
+    var myChart17 = "U_50-64.json";
+    var myChart18 = "U_65+.json";
+    var myChart19 = "England.json";
+    var myChart20 = "England_with_data.json";
+    var myChart21 = "GDPandIncome.json";
+    var myChart22 = "GDPandHappy.json";
+    var myChart23 = "apple.json";
+    var myChart24 = "apple_R&D.json";
+    var myChart25 = "democracy&happiness.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart4);
@@ -82,6 +184,23 @@
     vegaEmbed('#Chart4', myChart6);
     vegaEmbed('#Chart5', myChart7);
     vegaEmbed('#Chart6', myChart8);
+    vegaEmbed('#Chart7', myChart9);
+    vegaEmbed('#Chart8', myChart10);
+    vegaEmbed('#Chart9', myChart11);
+    vegaEmbed('#Chart10', myChart12);
+    vegaEmbed('#Chart11', myChart13);
+    vegaEmbed('#Chart12', myChart14);
+    vegaEmbed('#Chart13', myChart15);
+    vegaEmbed('#Chart14', myChart16);
+    vegaEmbed('#Chart15', myChart17);
+    vegaEmbed('#Chart16', myChart18);
+    vegaEmbed('#Chart17', myChart19);
+    vegaEmbed('#Chart18', myChart20);
+    vegaEmbed('#Chart19', myChart21);
+    vegaEmbed('#Chart20', myChart22);
+    vegaEmbed('#Chart21', myChart23);
+    vegaEmbed('#Chart22', myChart24);
+    vegaEmbed('#Chart23', myChart25);
 </script>
 
 </html>

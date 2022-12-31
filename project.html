@@ -10,7 +10,7 @@
     <title>Document</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -25,29 +25,112 @@
 
 <body>
 
-    <h2>Exploring happiness and GDP around the world</h2>
-    <container class="a_container">
-    <p>Happiness on a scale of 1-10 around the World</p>
-    <div class="chart" id="Chart1">
-    <script>
-        var myChart1 = "hapiness_map.json";
-        vegaEmbed('#Chart1', myChart1);
-        </script>
-        </div>
-        </container> 
-        <container class="a_container">
-        <p>GDP per capita around the World</p>
-        <div class="chart" id="Chart2">
-        <script>
-        var myChart2 = "gdp_per_capita_around_the_world.json";
-        vegaEmbed('#Chart2', myChart2);
-        </script>  
-        </div> 
-        </container> 
 
+
+
+        <div class="section1">  
+
+        
+            <h1></h1>
+            <h2>Happiness and GDP per capita around the World</h2>
+    
+            <container class="container">
+    
+            <div id="text">
+    
+                <h3>Happiness</h3>
+                <p> This map shows the variance in happiness around the world
+                </p>
+                <br>
+    
+                <div class="chart" id="Chart1"></div>
+    
+             </div>
+    
+    
+             <div id="text2">
+    
+                <h3>GDP per capita</h3>
+                <p> This map shows GDP per capita around the world. <br>blah blah blah </p>
+         
+                <div class="chart" id="Chart2"> </div>
+    
+            </div>
+        
+             </container>
+
+             <p>
+                Upon comparing the two maps, it is clear to see similarities in the distributions of happiness and GDP per capita. Darker areas, representing greater happiness/GDP per capita, can be seen in both maps in North America, Western Europe and Australia.
+             </p>
+    
+             
+    <br>     
+
+
+
+        </div>
+
+    <div class="section1">
+
+    <h3>Why do we see this Correlation?</h3>
+
+    <div class="chart" id="Chart3"> </div>
+
+    <p>The chart above shows a strong positive relationship between GDP and median income. (the size of the circles allow you to identify more populated countries)</p>
+    <p>Explaining why higher income means greater opportunities therefore happier life etc</p>
+
+    <br>
+
+    </div>
+
+
+
+
+    <div class="section1">
+
+        <h3>Does this relationship hold on a country level over time?</h3>
+        <h3>Event study on Finnish data (2013-2021)</h3>
+    
+        <div class="chart" id="Chart4"> </div>
+    
+        <p>The above chart depicts growth in Finnish GDP and happiness between the years 2013 and 2021. Finlands economy relies substantially on trade, and with an high export growth in the years after 2015, GDP began to rise noticeably. In 2019, as the pandemic began, Finlands economy predictably shrank.</p>
+       
+    
+        <br>
+    
+        </div>
+
+
+
+
+        <div class="section1">
+
+            <h3>Democracy and Happiness</h3>
+        
+            <div class="chart" id="Chart5"> </div>
+        
+            <p>The chart above shows a strong positive relationship between GDP and median income. (the size of the circles allow you to identify more populated countries)</p>
+            <p>Explaining why higher income means greater opportunities therefore happier life etc</p>
+        
+            <br>
+        
+            </div>
 
 </body>
 
+<script>
+    var myChart1 = "hapiness_map.json";
+    var myChart2 = "gdp_per_capita_around_the_world.json";
+    var myChart3 = "GDPandIncome.json";
+    var myChart4 = "GDPandHappy.json";
+    var myChart5 = "democracy&happiness.json";
 
+
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+</script>
 
 </html>

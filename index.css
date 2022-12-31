@@ -9,7 +9,7 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(180, 220, 230);
  
 }
 
@@ -21,38 +21,137 @@ h1, h3, p{
     text-align: center;
 }
     
+
+.link{
+    background-color: rgba(132, 180, 230, 0.5);
+
+    padding:10px;
+    
+    border:2px;
+    border-color:grey;
+    border-style: solid;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:700;
+    color:white;
+    text-decoration: none;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    margin: auto;
+}
+
+.link:hover{
+
+    background-color: rgba(68, 116, 237, 0.821);
+
+    border:2px;
+    border-color:rgb(0, 0, 0);
+    border-style: solid;
+    
+}
+
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(240, 240, 240);
     border-radius: 10px;
 }
 
 .myWeek2{
     margin: auto;
     max-width: 600px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(240, 240, 240);
     border-radius: 10px;
 }
 
 .myWeek3{
     margin: auto;
     max-width: 600px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(240, 240, 240);
     border-radius: 10px;
 }
 
+.myWeek4{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
 
+.myWeek5{
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
 
+.myWeek7{
+    margin: auto;
+    max-width: 750px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.myWeek8{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.myWeek9{
+    margin: auto;
+    max-width: 600px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: rgb(206, 190, 161);
+   
+    background-color: rgb(240, 240, 240);
     width:375px;
-    border-width: 3px;
+    border-width: 0px;
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(60, 60,60);
-
-    
 }
-    
+
+.chartw5{
+    align-items: center;
+    background-color: white;
+    width:360px;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #313d5a;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.chartw7{
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    width: 350px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.chartw8{
+   
+    background-color: rgb(240, 240, 240);
+    width:375px;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(60, 60,60);
+}
