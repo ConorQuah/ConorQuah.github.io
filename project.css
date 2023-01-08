@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(180, 220, 230);
+    background-color: rgb(220,220,230);
     align-items: center;
 }
 
-h1, h2, p{
+h1, h2, h3, p{
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     }
 
 
@@ -62,7 +64,58 @@ h1, h2, p{
     display: inline-block !important;
     min-width: 280px;
     margin: .01em;
+    border-radius: 10px;
     }
+
+
+    .chartmaps{
+      background-color: white;
+      display: flex; /*this is what puts charts side by side*/
+      align-items: center;
+      padding: 0.2em !important;
+      text-align: center; 
+      border-width: .2em;
+      height: 330px; /* can do %s here too! */
+      width: 560px;
+      display: inline-block !important;
+      min-width: 280px;
+      margin: .01em;
+      border-radius: 10px;
+      }
+  
+
+      .chartsquare{
+        background-color: white;
+        display: flex; /*this is what puts charts side by side*/
+        align-items: center;
+        padding: 0.2em !important;
+        text-align: center; 
+        border-width: .2em;
+        height: 360px; /* can do %s here too! */
+        width: 360px;
+        display: inline-block !important;
+        min-width: 280px;
+        margin: .01em;
+        border-radius: 10px;
+        }
+
+
+        .chartsliberty{
+          background-color: white;
+          display: flex; /*this is what puts charts side by side*/
+          align-items: center;
+          padding: 0.2em !important;
+          text-align: center; 
+          border-width: .2em;
+          height: 360px; /* can do %s here too! */
+          width: 390px;
+          display: inline-block !important;
+          min-width: 280px;
+          margin: .01em;
+          border-radius: 10px;
+          }
+  
+
 
     .container {
         display: flex;
@@ -97,3 +150,11 @@ h1, h2, p{
         overflow-y: hidden;
         box-sizing: border-box;
       }
+
+
+      .writeup{
+        margin: auto;
+        max-width: 600px;
+        background-color: rgb(250, 240, 2500);
+        border-radius: 10px;
+    }

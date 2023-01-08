@@ -3,6 +3,10 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/finland_data_with_event_again_again_again.csv"
   },
+
+  "height":265,
+  "width": 265,
+
   "layer": [
     {
       "mark": {"opacity": 0.5, "type": "line", "color": "#e6224b"},

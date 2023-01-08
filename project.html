@@ -43,7 +43,7 @@
                 </p>
                 <br>
     
-                <div class="chart" id="Chart1"></div>
+                <div class="chartmaps" id="Chart1"></div>
     
              </div>
     
@@ -51,9 +51,10 @@
              <div id="text2">
     
                 <h3>GDP per capita</h3>
-                <p> This map shows GDP per capita around the world. <br>blah blah blah </p>
+                <p> This map shows GDP per capita around the world. <br>Data scraped and cleaned  <a href="https://colab.research.google.com/drive/1-Puh5uJe8-0NG7_4uqgIS0xh1PxEhQwD" id="link1">here. 
+                </a> </p>
          
-                <div class="chart" id="Chart2"> </div>
+                <div class="chartmaps" id="Chart2"> </div>
     
             </div>
         
@@ -72,13 +73,12 @@
 
     <div class="section1">
 
-    <h3>Why do we see this Correlation?</h3>
+    <h2>Why do we see this Correlation?</h2>
 
-    <div class="chart" id="Chart3"> </div>
+    <div class="chartmaps" id="Chart3"> </div>
 
     <p>The chart above shows a strong positive relationship between GDP and median income. (the size of the circles allow you to identify more populated countries)</p>
-    <p>Explaining why higher income means greater opportunities therefore happier life etc</p>
-
+    <p>In theory, wealthier countries have less individuals struggling financially. With increased wealth, there's generally an increase in the ability to engage in hobbys and spend less hours in formal work, resulting in increased life satisfaction. It is important to note that ineqeuality in a country interrupts the relationship between GDP per capita and happiness. If a countries' wealth is held by only a small percentage of the population, the opportunities previously mentioned are only accessible to a minority.
     <br>
 
     </div>
@@ -88,12 +88,12 @@
 
     <div class="section1">
 
-        <h3>Does this relationship hold on a country level over time?</h3>
+        <h2>Does this relationship hold on a country level over time?</h2>
         <h3>Event study on Finnish data (2013-2021)</h3>
     
-        <div class="chart" id="Chart4"> </div>
+        <div class="chartsquare" id="Chart4"> </div>
     
-        <p>The above chart depicts growth in Finnish GDP and happiness between the years 2013 and 2021. Finlands economy relies substantially on trade, and with an high export growth in the years after 2015, GDP began to rise noticeably. In 2019, as the pandemic began, Finlands economy predictably shrank.</p>
+        <p>The above chart depicts growth in Finnish GDP and happiness between the years 2013 and 2021. Finland's economy relies substantially on trade, and with large growth in exports in the years after 2015, GDP began to rise noticeably. In 2019, as the pandemic began, Finlands economy predictably shrank. It appears as though there is a delayed relationship between GDP and happiness. This seems logical as there will be a time delay between expansion/contractions in an economy and the response of business in lowering real wage or reducing size of workforce.</p>
        
     
         <br>
@@ -115,10 +115,10 @@
             <div id="text">
     
                 <h3>Political Liberty</h3>
-                <p>democracy vs happiness</p>
+                <p>democracy vs happiness,</p>
                 <br>
     
-                <div class="chart" id="Chart5"></div>
+                <div class="chartsquare" id="Chart5"></div>
     
              </div>
     
@@ -126,17 +126,16 @@
              <div id="text2">
     
                 <h3>Civil Liberty</h3>
-                <p> civil <br>liberty </p>
+                <p>Civil liberties vs happpiness.<br>link to beautiful soup scrape <a href="https://colab.research.google.com/drive/14HFrhJEwSfL4Y8_z6v_XcyqXg8FunAvH" id="link1">here. 
+                </a> </p>
          
-                <div class="chart" id="Chart6"> </div>
+                <div class="chartsliberty" id="Chart6"> </div>
     
             </div>
         
              </container>
 
-             <p>
-                Upon comparing the two maps, it is clear to see similarities in the distributions of happiness and GDP per capita. Darker areas, representing greater happiness/GDP per capita, can be seen in both maps in North America, Western Europe and Australia.
-             </p>         
+             <p><a href="https://colab.research.google.com/drive/14HFrhJEwSfL4Y8_z6v_XcyqXg8FunAvH" id="link1">Action for Happiness</a> argue that democracy is necessary for a country to be happy. Individuals that do not feel represented and polically powerless are less likely to consider themselves happy. The left-hand-side chart compares happiness data and democracy index to find a positive correlation. I have extended this hypothesis and assumed there is a correlation between civil liberties and happiness. In the same way wealth promotes opportunity to follow desires, so do civil liberties. This interactive chart allows you to see how within a random selction of countries, there is a noticeable correlation between civil liberties and happiness.        
     <br>     
         </div>
 
@@ -147,16 +146,63 @@
 
         <div class="section1">
 
-            <h3>Freedom and Happiness</h3>
+            <h2>Bhutan, Costa Rica and Health</h2>
         
-            <div class="chart" id="Chart7"> </div>
+           
         
-            <p>The chart above shows a strong positive relationship between GDP and median income. (the size of the circles allow you to identify more populated countries)</p>
-            <p>Explaining why higher income means greater opportunities therefore happier life etc</p>
+            <p>Bhutan is a small nation in the Himalayas that has neither a large GDP or great democratic quality, yet it consistently rank as one of the happiest countries in the world. Bhutan is a Buddhist country that focuses on Gross National Happiness rather than GDP. The people of Bhutan live a peaceful and spiritual life, free of materialism and social pressures.</p>
+            <p>Costa rica is another small nation that consistently ranks higher in the happiness rankings than its wealthier competitors. After abolishing its army in 1948, The Costa Rican government heavily fund the education sector and its national health system.</p>
+            <p>Though both nations differ in a multitude of ways, one thing they have in common is the tendency of their civilians to live a healthy lifestyle. I have used life expectancy to as an index to a healthy lifestyle and regressed happiness on this index in the graph below.</p>
         
             <br>
         
+            <div class="chartsquare" id="Chart7"> </div>
+
+            <br>
+
+            <p>I scraped and cleaned the life expectancy data <a href="https://colab.research.google.com/drive/1sE4K6U1ujh5OfK3WJ5KFs1oa4RXUQ1Uc#scrollTo=kkFgXvO6_7wh" id="link1">here. 
+            </a> </p>
+
+            <br>
+
             </div>
+
+
+        </div>
+
+        <div class="section1">
+    
+        <h2>Conclusions</h2>
+        <p>Having evaluated a few of the many contributors to happiness, I would make the conclusion that a balance of all mentioned and non-mentioned factors would be necessary for a happy society. A country with extremely high GDP but without Democratic quality or equality will be largely unhappy. Likewise, a healthy country with a life expectancy of 100 years will be unhappy if the individuals within it are unable to make their own decisions and lack civil liberty. On an individual basis, happiness is often a product of relationships and a sense of community. Using the evidence presented in this project, I would argue that the happiest countries are those that provide the infrastructure and foundations to allow communities and healthy social relationships to succeed.</p>
+       
+        <br>
+    
+        </div>
+
+
+    </div>
+
+    <div class="writeup">
+
+    <h1>Write Up</h1>
+    <h3>Aims of My Project:</h3>
+    <p>My aim in this project was to give the reader a brief insight into what makes a country happier. The general opinion of the public would likely be that GDP per capita is the sole measurement that would produce a happier country, however I wanted to show that this alone not only not sufficient, but also not necessary at times (with the case study of Bhutan and Costa Rica). From a data science perspective, my aim was to use a mix basic charts, interactive charts, advanced charts and regressions, using both scraped and downloaded data to create a website that’s visually appealing. </p>
+    <h3>Data I used and how I accessed them:</h3>
+    <p>Happiness data used in analysis throughout was downloaded from <a href="https://www.theglobaleconomy.com/rankings/happiness/" id="link1">Global Economy</a>. Data specific to Finland used in the event study also came from this site.</p>
+    <p>GDP per capita data was scraped using pandas read_html function from<a href="https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)_per_capita" id="link1">Wikipedia</a>. The colab code can be found <a href="https://colab.research.google.com/drive/1-Puh5uJe8-0NG7_4uqgIS0xh1PxEhQwD" id="link1">here</a></p>
+    <p>Data on Median incomes was downloaded from <a href="https://worldpopulationreview.com/country-rankings/median-income-by-country " id="link1">World Population Review</a></p>
+    <p>Data on Civil Liberties was scraped using BeasutifulSoup4 from <a href="https://freedomhouse.org/countries/freedom-world/scores?sort=asc&order=Civil%20Liberties" id="link1">Freedom House</a>. The colab code can be found <a href="https://colab.research.google.com/drive/14HFrhJEwSfL4Y8_z6v_XcyqXg8FunAvH#scrollTo=ZYL7jS5o3Nim" id="link1">here</a></p>
+    <p>Data on life expectancy scraped from <a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy" id="link1">Wikipedia</a>. The colab code can be found <a href="https://colab.research.google.com/drive/1sE4K6U1ujh5OfK3WJ5KFs1oa4RXUQ1Uc#scrollTo=gdY5xFGD8voG" id="link1">here</a></p>
+    <h3>Problems I encountered and how I overcame them:</h3>
+    <p>The map of GDP/capita used data scraped from Wikipedia which was unclean in ways I had not previously encountered (for example there were master and sub column titles). I used colab to clean and export the data. I had to implement new code to remove leftmost character from country names (*) and also encountered distortion problems when exporting as normal csv, so exported as utf-8. Another Challenge I had in obtaining data was scraping the Civil liberty data. Pandas read_html function returned 'forbidden' when trying to scrape the website. As such, I had to use BeautifulSoup4 to ‘pretend to be a human’ to not have the scrape be blocked. To merge this data with the happiness data I imported both datasets into stata as I’m comfortable with merging data in this programme. I also had issues importing saved images into my visual studio code. This meant that once I had run a regression in colab. I had to reproduce the regression line with ‘fake data’ and layer it over the scatter plot in vega to portray the results of the colab regression.</p>
+   
+    <br>
+
+    </div>
+
+
+
+
 
 </body>
 
@@ -166,8 +212,8 @@
     var myChart3 = "GDPandIncome.json";
     var myChart4 = "GDPandHappy.json";
     var myChart5 = "democracy&happiness.json";
-    var myChart6 = "apple.json";
-    var myChart7 = "happiness&liberty.json";
+    var myChart7 = "happiness&le.json";
+    var myChart6 = "happiness&liberty.json";
 
 
 

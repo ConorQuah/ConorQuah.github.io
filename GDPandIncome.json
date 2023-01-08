@@ -25,7 +25,8 @@
       "tooltip": [
           {"field": "country", "type": "nominal", "title":"Country"},
          { "field": "pop2022", "title": "Population"}, 
-         {"field":"gdpPerCapitaPPP", "title":"GDP per Capita (PPP)"}
+         {"field":"gdpPerCapitaPPP", "title":"GDP per Capita (PPP)"},
+         {"field":"medianIncome", "title":"Median Income"}
   
   
   

@@ -3,6 +3,10 @@
     "data": {
       "url": "https://raw.githubusercontent.com/ConorQuah/ConorQuah.github.io/main/happiness%26democracy_for_vega.csv"
     },
+
+"height":280,
+"width": 280,
+
     "layer": [
       {
         "mark": {"opacity": 0.5, "type": "point"},
